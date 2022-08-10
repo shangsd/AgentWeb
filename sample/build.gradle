@@ -65,7 +65,6 @@ dependencies {
     })
     api 'androidx.appcompat:appcompat:1.0.0'
     api 'com.google.android.material:material:1.0.0'
-    //    compile "com.android.support:support-v4:${SUPPORT_LIB_VERSION}"
     testImplementation 'junit:junit:4.12'
 //    api project(':agentweb-core')
 //    api project(':agentweb-filechooser')

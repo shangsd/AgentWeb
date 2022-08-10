@@ -7,8 +7,8 @@ android {
     defaultConfig {
         minSdkVersion 14
         targetSdkVersion TARGET_SDK_VERSION.toInteger()
-        versionCode 3
-        versionName "5.0.0"
+        versionCode 1
+        versionName "1.0.0"
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
@@ -27,19 +27,15 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
     lintOptions {
         abortOnError false
     }
-    repositories {
-        flatDir {
-            dirs 'libs', 'providedLibs'
-        }
-    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-//   defaultPublishConfig "debug"
 }
 
 dependencies {
@@ -51,5 +47,4 @@ dependencies {
     compileOnly 'com.github.Justson:Downloader:v4.1.9-androidx'
     compileOnly 'com.google.android.material:material:1.0.0'
     compileOnly 'androidx.legacy:legacy-support-v4:1.0.0'
-    compileOnly fileTree(include: ['*.jar'], dir: 'providedLibs')
 }
